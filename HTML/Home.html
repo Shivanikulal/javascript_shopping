@@ -1,78 +1,234 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shopping Cart</title>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../CSS/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!-- Box Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-  <!-- -----header------- -->
-  <header>
-    <nav>
-      <!-- <a href="">Shopping Cart</a> -->
-      <h2>SHOPPING CART</h2>
-      <i class="bx bxs-shopping-bag"></i>
-    </nav>
-  </header>
- 
-    <div>
-      <h2 class="heading"> TRENDY BAGS</h2>
-    </div>
-    <section>
-    <div class="item">
-      <img src="../images/bag1.jpg" alt="bag" width="150px" height="190px"/>
-      <h3>BAG 1</h3>
       
-      <span>₹ 1000</span>
-      </div>
-      <div class="item">
-        <img src="../images/bag2.jpg" alt="bag" width="150px" height="190px" />
-        <h3>BAG 2</h3>
+    <div class="container">
+        <div class="row">
+         <div class="col-md-12 text-center p-4">
+             <h2 style="background-color:salmon; color: blueviolet;font: bold;"> Your Shopping Store</h2>
+         </div>
         
-        <span>₹ 500</span>
-        </div>
-        <div class="item">
-          <img src="../images/bag3.jpeg" alt="bag" width="150px" height="190px" />
-          <h3>BAG 2</h3>
+             <i class="bag shopping"></i>
+         </div>
           
-          <span>₹ 600</span>
-          </div>
-          <div class="item">
-            <img src="../images/bag4.jpeg" alt="bag" width="150px" height="190px"/>
-            <h3>BAG 3</h3>
-            
-            <span>₹ 700</span>
-            </div>
-            <div class="item">
-              <img src="../images/bag 5.jpeg" alt="bag" width="150px" height="190px" />
-              <h3>BAG 5</h3>
-              
-              <span>₹ 200</span>
-              </div>
-              <div class="item">
-                <img src="../images/bag 6.jpeg" alt="bag" width="150px" height="190px" />
-                <h3>BAG 6</h3>
-                
-                <span>₹ 1200</span>
-                </div>
-                <div class="item">
-                  <img src="../images/bag 7.jpeg" alt="bag" width="150px" height="190px" />
-                  <h3>BAG 7</h3>
-                  
-                  <span>₹ 600</span>
-                  </div>
-                  <div class="item">
-                    <img src="../images/bag 8.jpg" alt="bag" width="150px" height="190px" />
-                    <h3>BAG 8</h3>
-                    
-                    <span>₹ 400</span>
-                  </div>
-  </section>
-</body>
+         <div class="col-md-2 text-left text-white p-4">
+           <a href="./Cart.html" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Add To Cart </a>
+           
+           
+       <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+       </div>
+        </div> 
+     
 
+     <div class="container border-5 border-outline-warning mt-4">
+        <div class="row">
+          <div class="col-md-3 p-3">
+              <img src="../Images/bag1.jpg" length="200px" width="200px">
+              <h3 style="color: black;"> BAG 1</h3>
+              <span>₹559</span>
+              <br>
+              <div class="btn-group">
+              <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+              <script>
+                  function ButtonClicked() {
+                    alert('continue buying');
+      
+                  }
+                  function buttonClicked(){
+                      alert('added to cart');
+                  }
+                </script>
+               <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
+               
+                     <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
+             
+              </div>
+          </div>
+         
+          <div class="col-md-3 p-3 bg-light text-black text">
+              <img src="..//Images/bag2.jpg" length="200px" width="200px">
+              <h3 style="color: black;"> BAG 2</h3>
+              <span>₹799</span>
+              <br>
+              <div class="btn-group">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                <script>
+                    function ButtonClicked() {
+                      alert('continue buying');
+        
+                    }
+                    function buttonClicked(){
+                        alert('added to cart');
+                    }
+                  </script>
+                 <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
+                 
+                       <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
+               
+                </div>
+            </div>  
+            <div class="col-md-3 p-3">
+                <img src="../Images/bag3.jpeg" length="200px" width="200px">
+                <h3 style="color: black;"> BAG 3</h3>
+                <span>₹299</span>
+                <br>
+               
+                <div class="btn-group">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                <script>
+                    function ButtonClicked() {
+                      alert('continue buying');
+        
+                    }
+                    function buttonClicked(){
+                        alert('added to cart');
+                    }
+                  </script>
+                  <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
+             
+                  <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
+          
+           </div>
+       </div> 
+       <div class="col-md-3 p-3">
+           <img src="../Images/bag4.jpeg" length="200px" width="200px">
+           <h3> BAG 4</h3>
+           <span>₹349</span>
+           <br>
+           <div class="btn-group">
+           <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+           <script>
+               function ButtonClicked() {
+                 alert('continue buying');
+   
+               }
+               function buttonClicked(){
+                   alert('added to cart');
+               }
+             </script>
+            <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
+            
+                  <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
+          
+                  
+           </button>
+         </div>
+      </div>
+    </div>
+   </div>
+<br>
+
+<div class="container border-5 border-outline-warning mt-4">
+  <div class="row">
+    <div class="col-md-3 p-3">
+        <img src="../Images/bag 5.jpeg" length="200px" width="200px">
+        <h3 style="color: black;"> BAG 5</h3>
+        <span>₹569</span>
+        <br>
+        <div class="btn-group">
+        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+        <script>
+           function ButtonClicked() {
+             alert('continue buying');
+
+           }
+           function buttonClicked(){
+               alert('added to cart');
+           }
+         </script>
+        <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
+        
+              <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
+      
+        </div>
+    </div>
+   
+    <div class="col-md-3 p-3 bg-light text-black text">
+        <img src="../Images/bag 6.jpeg" length="200px" width="200px">
+        <h3 style="color: black;"> BAG 6</h3>
+        <span>₹1299</span>
+        <br>
+        <div class="btn-group">
+        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+        <script>
+           function ButtonClicked() {
+             alert('continue buying');
+
+           }
+           function buttonClicked(){
+               alert('added to cart');
+           }
+         </script>
+        <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
+        
+              <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
+      
+        </div>
+    </div>  
+    <div class="col-md-3 p-3">
+        <img src="../Images/bag 7.jpeg" length="200px" width="200px">
+        <h3 style="color: black;"> BAG 7</h3>
+        <span>₹399</span>
+        <br>
+        <div class="btn-group">
+        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+        <script>
+           function ButtonClicked() {
+             alert('continue buying');
+
+           }
+           function buttonClicked(){
+               alert('added to cart');
+           }
+         </script>
+        <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
+        
+              <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
+      
+        </div>
+    </div> 
+    <div class="col-md-3 p-3">
+        <img src="../Images/bag 8.jpg" length="200px" width="200px">
+        <h3 style="color: black;"> BAG 8</h3>
+        <span style="color: #000;">₹599</span>
+        <br>
+        <div class="btn-group">
+        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+        <script>
+           function ButtonClicked() {
+             alert('continue buying');
+
+           }
+           function buttonClicked(){
+               alert('added to cart');
+           }
+         </script>
+        <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
+        
+              <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>       
+        </button>
+        
+      </div>
+   </div>
+ </div>
+</div>
+
+      <br>
+      <script rel="js" src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-Footer
+
+    
+    

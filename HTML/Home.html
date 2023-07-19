@@ -1,234 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- css -->
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <!-- Box Icon -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <i class='bx bxs-cart bx-lg'></i>
 </head>
 
 <body>
-      
+    <header>
+        <nav class="nav-bar">
+            <span></span>
+            <h1>Bag shopping</h1>
+            <a href="../HTML/Cart.html">
+                <box-icon type='solid' name='cart' size="lg"></box-icon>
+            </a>
+        </nav>
+    </header>
+<br>
+    <!-- products -->
     <div class="container">
         <div class="row">
-         <div class="col-md-12 text-center p-4">
-             <h2 style="background-color:salmon; color: blueviolet;font: bold;"> Your Shopping Store</h2>
-         </div>
-        
-             <i class="bag shopping"></i>
-         </div>
-          
-         <div class="col-md-2 text-left text-white p-4">
-           <a href="./Cart.html" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Add To Cart </a>
-           
-           
-       <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-       </div>
-        </div> 
-     
-
-     <div class="container border-5 border-outline-warning mt-4">
-        <div class="row">
-          <div class="col-md-3 p-3">
-              <img src="../Images/bag1.jpg" length="200px" width="200px">
-              <h3 style="color: black;"> BAG 1</h3>
-              <span>₹559</span>
-              <br>
-              <div class="btn-group">
-              <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-              <script>
-                  function ButtonClicked() {
-                    alert('continue buying');
-      
-                  }
-                  function buttonClicked(){
-                      alert('added to cart');
-                  }
-                </script>
-               <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-               
-                     <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
-             
-              </div>
-          </div>
-         
-          <div class="col-md-3 p-3 bg-light text-black text">
-              <img src="..//Images/bag2.jpg" length="200px" width="200px">
-              <h3 style="color: black;"> BAG 2</h3>
-              <span>₹799</span>
-              <br>
-              <div class="btn-group">
-                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                <script>
-                    function ButtonClicked() {
-                      alert('continue buying');
-        
-                    }
-                    function buttonClicked(){
-                        alert('added to cart');
-                    }
-                  </script>
-                 <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-                 
-                       <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
-               
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="../IMAGES/bag1.jpg"  width="200" height="250" class="card-img-top" alt=".loading..">
+                    <div class="card-body">
+                        <h5 class="card-title">pink bag</h5>
+                        <div class="price">699rs</div>
+                        <button type="button" class="btn btn-outline-primary btn-sm add-cart" onclick="showAddedToCartMessage('Your Product is added to cart 🛒')">Add to cart</button>
+                    </div>
                 </div>
-            </div>  
-            <div class="col-md-3 p-3">
-                <img src="../Images/bag3.jpeg" length="200px" width="200px">
-                <h3 style="color: black;"> BAG 3</h3>
-                <span>₹299</span>
-                <br>
-               
-                <div class="btn-group">
-                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                <script>
-                    function ButtonClicked() {
-                      alert('continue buying');
-        
-                    }
-                    function buttonClicked(){
-                        alert('added to cart');
-                    }
-                  </script>
-                  <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-             
-                  <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
-          
-           </div>
-       </div> 
-       <div class="col-md-3 p-3">
-           <img src="../Images/bag4.jpeg" length="200px" width="200px">
-           <h3> BAG 4</h3>
-           <span>₹349</span>
-           <br>
-           <div class="btn-group">
-           <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-           <script>
-               function ButtonClicked() {
-                 alert('continue buying');
-   
-               }
-               function buttonClicked(){
-                   alert('added to cart');
-               }
-             </script>
-            <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-            
-                  <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
-          
-                  
-           </button>
-         </div>
-      </div>
-    </div>
-   </div>
-<br>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="../IMAGES/bag2.jpg"   width="200" height="250" class="card-img-top" alt=".loading..">
+                    <div class="card-body">
+                        <h5 class="card-title">Zara bag</h5>
+                        <div class="price">949rs</div>
+                        <button type="button" class="btn btn-outline-primary btn-sm add-cart" onclick="showAddedToCartMessage('Your Product is added to cart 🛒')" >Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="../IMAGES/bag3.jpeg"  width="200" height="250" class="card-img-top" alt="..loading.">
+                    <div class="card-body">
+                        <h5 class="card-title">stylish bag</h5>
+                        <div class="price">1449rs</div>
+                        <button type="button" class="btn btn-outline-primary btn-sm add-cart" onclick="showAddedToCartMessage('Your Product is added to cart 🛒')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="../IMAGES/bag4.jpeg"  width="200" height="250" class="card-img-top" alt="..loading.">
+                    <div class="card-body">
+                        <h5 class="card-title">fancy bag</h5>
+                        <div class="price">799rs</div>
+                        <button type="button" class="btn btn-outline-primary btn-sm add-cart" onclick="showAddedToCartMessage('Your Product is added to cart 🛒')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
 
-<div class="container border-5 border-outline-warning mt-4">
-  <div class="row">
-    <div class="col-md-3 p-3">
-        <img src="../Images/bag 5.jpeg" length="200px" width="200px">
-        <h3 style="color: black;"> BAG 5</h3>
-        <span>₹569</span>
-        <br>
-        <div class="btn-group">
-        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-        <script>
-           function ButtonClicked() {
-             alert('continue buying');
-
-           }
-           function buttonClicked(){
-               alert('added to cart');
-           }
-         </script>
-        <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-        
-              <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
-      
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="../IMAGES/bag 5.jpeg"  width="200" height="250" class="card-img-top" alt="..loading.">
+                    <div class="card-body">
+                        <h5 class="card-title">skinny bag</h5>
+                        <div class="price">1899rs</div>
+                        <button type="button" class="btn btn-outline-primary btn-sm add-cart" onclick="showAddedToCartMessage('Your Product is added to cart 🛒')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="../IMAGES/bag 6.jpeg"  width="200" height="250" class="card-img-top" alt="..loading.">
+                    <div class="card-body">
+                        <h5 class="card-title"> side bag</h5>
+                        <div class="price">1299rs</div>
+                        <button type="button" class="btn btn-outline-primary btn-sm add-cart" onclick="showAddedToCartMessage('Your Product is added to cart 🛒')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="../IMAGES/bag 7.jpeg"  width="200" height="250" class="card-img-top" alt="..loading.">
+                    <div class="card-body">
+                        <h5 class="card-title">Cute  bag</h5>
+                        <div class="price">899rs</div>
+                        <button type="button" class="btn btn-outline-primary btn-sm add-cart" onclick="showAddedToCartMessage('Your Product is added to cart 🛒')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="../IMAGES/bag 8.jpg"  width="200" height="250" class="card-img-top" alt="..loading.">
+                    <div class="card-body">
+                        <h5 class="card-title">luggage bag</h5>
+                        <div class="price">999rs</div>
+                        <button type="button" class="btn btn-outline-primary btn-sm add-cart" onclick="showAddedToCartMessage(' Your Product is added to cart 🛒')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-   
-    <div class="col-md-3 p-3 bg-light text-black text">
-        <img src="../Images/bag 6.jpeg" length="200px" width="200px">
-        <h3 style="color: black;"> BAG 6</h3>
-        <span>₹1299</span>
-        <br>
-        <div class="btn-group">
-        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-        <script>
-           function ButtonClicked() {
-             alert('continue buying');
-
-           }
-           function buttonClicked(){
-               alert('added to cart');
-           }
-         </script>
-        <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-        
-              <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
-      
-        </div>
-    </div>  
-    <div class="col-md-3 p-3">
-        <img src="../Images/bag 7.jpeg" length="200px" width="200px">
-        <h3 style="color: black;"> BAG 7</h3>
-        <span>₹399</span>
-        <br>
-        <div class="btn-group">
-        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-        <script>
-           function ButtonClicked() {
-             alert('continue buying');
-
-           }
-           function buttonClicked(){
-               alert('added to cart');
-           }
-         </script>
-        <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-        
-              <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
-      
-        </div>
-    </div> 
-    <div class="col-md-3 p-3">
-        <img src="../Images/bag 8.jpg" length="200px" width="200px">
-        <h3 style="color: black;"> BAG 8</h3>
-        <span style="color: #000;">₹599</span>
-        <br>
-        <div class="btn-group">
-        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-        <script>
-           function ButtonClicked() {
-             alert('continue buying');
-
-           }
-           function buttonClicked(){
-               alert('added to cart');
-           }
-         </script>
-        <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-        
-              <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>       
-        </button>
-        
-      </div>
-   </div>
- </div>
-</div>
-
-      <br>
-      <script rel="js" src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <div id="messageContainer" class="message-center"></div>
+    <script src="../JS/main.js"></script>
 </body>
-</html>
 
-    
-    
+</html>

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Dancing+Script:wght@700&display=swap');
+
+.navbar {
+    color: rgb(82, 59, 218);
+    border: silver;
+    font-size: large;
+    position: fixed;
+    background-color: rgb(187, 149, 244);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin: 0;
+}
+
+.navbar a {
+    margin-left: 20px;
+}
+
+.navbar i {
+    margin-right: 20px;
+}
+
+#shop-product{
+    color: rgb(6, 6, 22);
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: underline;
+}
+*{
+    font-family: 'Bacasime Antique', serif;
+}
+
+.product-container-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 100px;
+}
+
+.product-1 {
+    margin: 10px;
+    border: 2px solid;
+    width: 17%;
+    height: 400px;
+}
+
+.product-1 img {
+    width: 100%;
+    height: 55%;
+}
+
+.product-1 span{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.product-1 h2{
+    margin: 10px;
+}
+.product-1 button{
+    border-radius: 25%;
+    background-color: rgb(137, 20, 220);
+    color: white;
+    font-size: large;
+}
